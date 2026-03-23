@@ -21,6 +21,6 @@ sleep(5)
 select.deselect_by_index(6)
 select.deselect_all()
 print(select.first_selected_option)
-print(select.all_selected_options)
+print('before deselect:', [i.text for i in select.all_selected_options])
 
 driver.quit()

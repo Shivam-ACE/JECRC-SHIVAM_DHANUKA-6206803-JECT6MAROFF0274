@@ -37,4 +37,17 @@ sleep(2)
 # print(name.get_attribute("placeholder"))
 # print(email.get_attribute("value"))
 
+male = driver.find_element(By.ID, 'male')
+male.click()
+print(male.is_displayed())
+print(male.is_enabled())
+
+check = driver.find_element(By.XPATH, '//label[text()="Monday"]/preceding-sibling::input')
+check.click()
+
+print(check.is_selected())
+monday_checkbox = driver.find_element(By.XPATH, '//input[@id="monday"]/following-sibling::label')
+print(monday_checkbox.text)
+
+
 driver.quit()
