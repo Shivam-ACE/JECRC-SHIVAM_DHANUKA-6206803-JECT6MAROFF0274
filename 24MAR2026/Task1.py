@@ -41,7 +41,8 @@ actions.release().perform()
 wait.until(EC.visibility_of_element_located((By.XPATH, '//input[@value="Register"]'))).click()
 sleep(5)
 
-driver.refresh()
+# driver.refresh()
+driver.back()
 
 iframe = wait.until(EC.presence_of_element_located((By.ID, 'result')))
 driver.switch_to.frame(iframe)
