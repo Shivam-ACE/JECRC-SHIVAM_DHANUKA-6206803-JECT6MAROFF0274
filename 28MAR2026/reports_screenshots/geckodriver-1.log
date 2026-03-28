@@ -1,0 +1,27 @@
+1774683503440	geckodriver	INFO	Listening on 127.0.0.1:49682
+1774683506715	mozrunner::runner	INFO	Running command: "C:\\Users\\shiva\\.cache\\selenium\\firefox\\win64\\149.0\\firefox.exe" "--marionette" "--remote-debugging- ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\shiva\\AppData\\Local\\Temp\\rust_mozprofileW9ZiYi"
+Dynamically enable window occlusion 0
+1774683507699	Marionette	INFO	Marionette enabled
+1774683507956	Marionette	INFO	Listening on port 62703
+WebDriver BiDi listening on ws://127.0.0.1:49683
+Read port: 62703
+1774683508268	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+JavaScript warning: https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js, line 1: Script terminated by timeout at:
+He@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:118682
+fn@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:134223
+ts@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:233349
+5413/ah/z/beforeSpanEnd/</<@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:385767
+5413/ah/z/beforeSpanEnd/<@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:385835
+5413/ah/z/beforeSpanEnd/<@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:383191
+beforeSpanEnd@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:387585
+apply@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:139137
+5413/ah/afterAllSetup/<@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:393780
+n@https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.e5db258c.js:1:219048
+
+1774683515972	Marionette	INFO	Stopped listening on port 62703
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
