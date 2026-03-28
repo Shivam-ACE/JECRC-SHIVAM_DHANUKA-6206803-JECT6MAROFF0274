@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-27T14:48:34.451008" rpa="false" schemaversion="5">
+<suite id="s1" name="Open Browser" source="I:\SeleniumCAP\27MAR2026\open_browser.robot">
+<test id="s1-t1" name="Open cricbuzz in edge" line="33">
+<kw name="Open Edge Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:48:37.096772" level="INFO">Opening browser 'edge' to base url 'https://www.cricbuzz.com/'.</msg>
+<arg>${url}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T14:48:37.096357" elapsed="9.492785"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T14:48:46.589385" elapsed="0.054934"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T14:48:46.644918" level="INFO">navigated to cricbuzz</msg>
+<arg>navigated to cricbuzz</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T14:48:46.644541" elapsed="0.000433"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>naviagted to cricbuzz</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-27T14:48:46.645076" elapsed="0.000358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T14:48:49.646153" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T14:48:46.645567" elapsed="3.000755"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T14:48:49.646591" elapsed="2.210941"/>
+</kw>
+<tag>smoke reg</tag>
+<doc>Chrome browser navigation to https://www.cricbuzz.com/</doc>
+<status status="PASS" start="2026-03-27T14:48:37.095149" elapsed="14.762623"/>
+</kw>
+<status status="PASS" start="2026-03-27T14:48:37.093716" elapsed="14.764609"/>
+</test>
+<doc>Opening of browsers</doc>
+<status status="PASS" start="2026-03-27T14:48:34.454307" elapsed="17.404993"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Open Browser" id="s1" pass="1" fail="0" skip="0">Open Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

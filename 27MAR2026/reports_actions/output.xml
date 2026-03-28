@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-27T15:52:46.070545" rpa="false" schemaversion="5">
+<suite id="s1" name="Actions" source="I:\SeleniumCAP\27MAR2026\actions.robot">
+<test id="s1-t1" name="Scroll to the element" line="32">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T15:52:46.324137" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T15:52:46.323850" elapsed="4.580779"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T15:52:50.905040" elapsed="0.024665"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:52:51.931313" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:52:50.930670" elapsed="1.000853"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//a[text()="Typos"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-27T15:52:51.931907" elapsed="0.281242"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:52:56.214424" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:52:52.213557" elapsed="4.001190"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T15:52:56.215165" elapsed="2.137541"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:52:46.322650" elapsed="12.030621"/>
+</test>
+<status status="PASS" start="2026-03-27T15:52:46.072045" elapsed="12.282472"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Actions" id="s1" pass="1" fail="0" skip="0">Actions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
