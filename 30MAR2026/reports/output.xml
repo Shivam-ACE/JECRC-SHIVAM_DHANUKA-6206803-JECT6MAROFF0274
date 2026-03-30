@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-30T15:58:00.107398" rpa="false" schemaversion="5">
+<suite id="s1" name="Task3" source="I:\SeleniumCAP\30MAR2026\Task3.robot">
+<test id="s1-t1" name="Amazon" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:00.653041" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T15:58:00.652525" elapsed="4.671118"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T15:58:05.324516" elapsed="0.035958"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:06.362895" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:05.361171" elapsed="1.002040"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:06.365380" level="INFO">Clicking element 'xpath=//a[@href="/electronics/b/?ie=UTF8&amp;node=976419031&amp;ref_=nav_cs_electronics"]'.</msg>
+<arg>xpath=//a[@href="/electronics/b/?ie=UTF8&amp;node=976419031&amp;ref_=nav_cs_electronics"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:06.364096" elapsed="4.891120"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:13.257531" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:11.255971" elapsed="2.001818"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:13.259249" level="INFO">Clicking element 'xpath=//input[@id="apb-browse-refinements-checkbox_6"]/parent::label/parent::div'.</msg>
+<arg>xpath=//input[@id="apb-browse-refinements-checkbox_6"]/parent::label/parent::div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:13.258573" elapsed="2.976467"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:19.236393" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:16.235658" elapsed="3.001041"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:19.302065" level="INFO">${prod_name} = Boat Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant &amp; 120cm Cable (Active Black)</msg>
+<var>${prod_name}</var>
+<arg>//div[@data-component-id="24"]//h2/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:19.238017" elapsed="0.064199"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:19.304636" level="INFO">Clicking element 'xpath=//div[@data-component-id="24"]//img'.</msg>
+<arg>xpath=//div[@data-component-id="24"]//img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:19.304075" elapsed="0.377921"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:21.685155" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:19.683518" elapsed="2.001840"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:21.686016" elapsed="0.259891"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:23.639555" level="INFO">Current page contains text 'Boat Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant &amp; 120cm Cable (Active Black)'.</msg>
+<arg>${prod_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T15:58:21.946595" elapsed="1.693193"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:23.877875" level="INFO">${actual_price} = ₹999</msg>
+<var>${actual_price}</var>
+<arg>xpath=(//div[@id="corePriceDisplay_desktop_feature_div"]//span[@aria-hidden="true"])[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:23.640618" elapsed="0.237352"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:23.939904" level="INFO">${discounted_price} = ₹499</msg>
+<var>${discounted_price}</var>
+<arg>xpath=(//div[@id="corePriceDisplay_desktop_feature_div"]//span[@aria-hidden="true"])[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:23.878605" elapsed="0.061418"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:23.998318" level="INFO">${percent} = -50%</msg>
+<var>${percent}</var>
+<arg>xpath=(//div[@id="corePriceDisplay_desktop_feature_div"]//span[@aria-hidden="true"])[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:23.940575" elapsed="0.057846"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Actual Price: ${actual_price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:58:23.998957" elapsed="0.000776"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Discounted Price: ${discounted_price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:58:24.000209" elapsed="0.000700"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Percentage: ${percent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:58:24.001752" elapsed="0.000725"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-30T15:58:24.002923" elapsed="0.438512"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:25.442980" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:24.442027" elapsed="1.001164"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:25.444301" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:25.443784" elapsed="2.506143"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:28.952086" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:27.950558" elapsed="1.001766"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:28.953572" level="INFO">Clicking element 'id=nav-cart'.</msg>
+<arg>id=nav-cart</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:58:28.953100" elapsed="2.393771"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:58:32.349580" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:58:31.348143" elapsed="1.001704"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:58:32.396576" level="INFO">Current page contains text 'Boat Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant &amp; 120cm Cable (Active Black)'.</msg>
+<arg>${prod_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T15:58:32.350569" elapsed="0.046238"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T15:58:32.397929" elapsed="2.610551"/>
+</kw>
+<status status="PASS" start="2026-03-30T15:58:00.650627" elapsed="34.358775"/>
+</test>
+<status status="PASS" start="2026-03-30T15:58:00.110819" elapsed="34.900042"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task3" id="s1" pass="1" fail="0" skip="0">Task3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
