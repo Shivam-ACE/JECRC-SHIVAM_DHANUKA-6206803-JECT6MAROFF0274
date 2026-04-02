@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-02T10:45:12.127299" rpa="false" schemaversion="5">
+<suite id="s1" name="Open Browser" source="I:\SeleniumCAP\27MAR2026\open_browser.robot">
+<test id="s1-t1" name="Opening Chrome Browser" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T10:45:13.044866" level="INFO">Opening browser 'chrome' to base url 'https://www.cricbuzz.com/'.</msg>
+<msg time="2026-04-02T10:45:41.228683" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T10:45:13.043918" elapsed="38.480038"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T10:45:51.525947" elapsed="0.156056"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T10:45:51.683944" level="INFO">navigated to cricbuzz</msg>
+<arg>navigated to cricbuzz</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T10:45:51.682993" elapsed="0.001154"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${bikes}[1]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-02T10:45:51.685053" elapsed="0.000714"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cars.honda}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-02T10:45:51.686165" elapsed="0.001540"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T10:45:54.689375" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T10:45:51.688132" elapsed="3.001489"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-02T10:45:54.690466" elapsed="2.446669"/>
+</kw>
+<doc>Chrome browser navigation to https://www.cricbuzz.com/</doc>
+<status status="PASS" start="2026-04-02T10:45:13.041884" elapsed="44.096415"/>
+</test>
+<doc>Opening of browsers</doc>
+<status status="PASS" start="2026-04-02T10:45:12.130779" elapsed="45.009017"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Open Browser" id="s1" pass="1" fail="0" skip="0">Open Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-02T10:45:41.228683" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+</errors>
+</robot>
