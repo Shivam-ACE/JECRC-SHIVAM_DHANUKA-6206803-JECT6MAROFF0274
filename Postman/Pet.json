@@ -1,0 +1,382 @@
+{
+  "info": {
+    "_postman_id": "c39fbfe7-8449-4929-9e16-4f499bf24ada",
+    "name": "Pet Store",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49542750",
+    "_collection_link": "https://go.postman.co/collection/49542750-c39fbfe7-8449-4929-9e16-4f499bf24ada?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "store",
+      "item": [
+        {
+          "name": "Get inventories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/store/inventory",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "store",
+                "inventory"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Place an order for pet",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 33,\r\n  \"petId\": 111,\r\n  \"quantity\": 3,\r\n  \"shipDate\": \"2026-04-07T07:43:50.799Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/store/order",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "store",
+                "order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find purchase by id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"33\");\r",
+                  "});\r",
+                  "pm.test(\"Response time is less than 300ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/store/order/33",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "store",
+                "order",
+                "33"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete order by id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/store/order/33",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "store",
+                "order",
+                "33"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "pet",
+      "item": [
+        {
+          "name": "Adds new pet to store",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 11,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/pet",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update an existing pet",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 33,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/pet",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Updates a pet in the store with form data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "Labra",
+                  "type": "text",
+                  "uuid": "2ac543c7-6199-4a82-911c-c76fecc6e2f7"
+                },
+                {
+                  "key": "status",
+                  "value": "pending",
+                  "type": "text",
+                  "uuid": "1a383ad2-f9ac-4ac8-ab1c-05e105e3b4cf"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/pet/33",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "33"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find pets by status",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"33\");\r",
+                  "});\r",
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"Labra\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/pet/findByStatus?status=pending",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "findByStatus"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find pet by id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"33\");\r",
+                  "});\r",
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"Labra\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/pet/33",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "33"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Uploads an image",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "additionalMetadata",
+                  "value": "test image",
+                  "type": "text",
+                  "uuid": "e246bd81-cd35-4438-9159-9d5e909bf15d"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "21bb74bc-5a31-46cf-bda5-6a8587a0b682",
+                  "src": "/I:/WEB-TECH CAP/HTML/assets/4.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "Overview",
+              "host": [
+                "Overview"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": ""
+    }
+  ]
+}

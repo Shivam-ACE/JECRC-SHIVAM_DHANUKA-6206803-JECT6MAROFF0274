@@ -1,0 +1,64 @@
+{
+	"id": "26ca8b04-580e-4fe9-b879-c322eee63da5",
+	"name": "Shopperstack_env",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://www.shoppersstack.com/shopping",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "shopperId",
+			"value": 384517,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "shopperEmail",
+			"value": "ace02@gmail.com",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "shopperPwd",
+			"value": "iloveyou3000",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "jwtToken",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhY2UwMkBnbWFpbC5jb20gU0hPUFBFUiIsImV4cCI6MTc3NTgzMjkxOCwiaWF0IjoxNzc1Nzk2OTE4fQ.0_-KGevv7Q_JK5HeWMoOCX1RfAqSlzGcXmtzdtSoK2g",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "addressId",
+			"value": 153200,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "itemId",
+			"value": 480873,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "orderId",
+			"value": 72962,
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "reviewId",
+			"value": 28537,
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-04-10T07:34:07.005Z",
+	"_postman_exported_using": "Postman/12.5.6"
+}
