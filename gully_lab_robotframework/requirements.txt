@@ -1,0 +1,10 @@
+robotframework==7.4.2
+robotframework-seleniumlibrary==6.8.0
+robotframework-pabot==5.2.2          ##parallel execution
+robotframework-datadriver[XLS]==1.11.2    ####data-driven testing
+python-dotenv==1.2.2          ########Load config for env
+PyYAML==6.0.3
+
+selenium==4.24.0
+webdriver-manager==4.0.2
+robotframework-datadriver==1.11.2
